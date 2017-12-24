@@ -28,6 +28,7 @@ stage {
     box-shadow: none;
     text-shadow: none;
     icon-shadow: none;
+
     &:hover, &:focuse {
         color: white;
         border: none;
@@ -73,7 +74,7 @@ stage {
     color: white;
     border: none;
     background-color: rgba(0,0,0,0.1);
-    background-gradient-direction: none;
+    background-gradienbuttot-direction: none;
     background-gradient-start: rgba(0,0,0,0.1);
     background-gradient-end: rgba(0,0,0,0.1);
     box-shadow: none;
@@ -91,6 +92,11 @@ stage {
     background-color: black;
     box-shadow: inset 0 0 black;
     font-weight: bold;
+
+    &:active, &:hover, &:focuse, &:focus {
+        box-shadow: inset 0 0px 4px 0px white;
+        background-color: #222;
+    }
 }
 
 /* Entries */
@@ -356,6 +362,10 @@ StScrollBar {
     background-color: #d41a1a;
     font-size: 10pt;
     color: white;
+
+    &:active, &:hover, &:focuse, &:focus {
+        background-color: rgba(#d41a1a, .8);;
+    }
 }
 .end-session-dialog .modal-dialog-linked-button:last-child:active {
     color: white;
